@@ -14,7 +14,7 @@ For 'a', since 'a' is the 1st beginning alphabet then the encrypted character of
 
 For 'b', since 'b' is the 2nd beginning alphabet then the encrypted character of 'b' will be 2nd alphabet from last i.e., 'y' and so on.
 
-The encrption algorithm has been mentioned in the code file (PA0.py). 
+The encryption algorithm has been mentioned in the code file (PA0.py). 
 
 ### Final GUI 
 
