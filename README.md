@@ -1,6 +1,6 @@
 # Network-Security-CSE-537
 
-## Practical Assignment 1
+## Practical Assignment 2
 
 Perform experiments to explore the Avalanche Effect progression across the DES rounds. Use (i) 5 different plaintexts (ii) 5 different Hamming distances (HD) (iii) 5 different secret keys. Report plots of HD against round number. 
 
@@ -21,7 +21,7 @@ The above text_list contains plaintext with hamming distances 1, 2, 3, 4 and 5 w
 
 ### Variation of Hamming distance in 16 rounds
 
-<img src="./images/vt1.png"> 
+<img src="./images/vt1.png" width="300"> 
 
 Where column Δp1 denotes the hamming distance observed after a particular round of DES and so on.
 
@@ -41,7 +41,7 @@ The above key_list contains keys with hamming distances 1, 2, 3, 4 and 5 with re
 
 ### Variation of Hamming distance in 16 rounds
 
-<img src="./images/vt2.png"> 
+<img src="./images/vt2.png" width="300"> 
 
 Where column Δp1 denotes the hamming distance observed after a particular round of DES and so on.
 
@@ -51,7 +51,7 @@ Where column Δp1 denotes the hamming distance observed after a particular round
 
 
 
-## Practical Assignment 0
+## Practical Assignment 1
 
 Write a program with a nice UI to Encipher / Decipher with the simple encryption algorithm discussed in the class.
 
