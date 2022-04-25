@@ -13,18 +13,21 @@ Let’s understand the idea using a simple example :
 
 Suppose Tommy wants to communicate with Arthur,
 
-->	Arthur will generate his public and private keys : 
+-	Arthur will generate his public and private keys : 
+
   -	He will choose a very large number q and a cyclic group Fq.
   -	From the group, he will choose two elements g and a such that GCD(q , a) = 1.
-  -	Computes h = ga.
-  -	He then publishes F,h = ga, q and g as his public key and a as private key.
-->	Now Tommy encrypts the data using Arthur’s public key : 
+  -	Computes h = g^a.
+  -	He then publishes F,h = g^a, q and g as his public key and a as private key.
+ 
+-	Now Tommy encrypts the data using Arthur’s public key : 
   -	Tommy selects an element k from cyclic group F such that GCD(q,k) = 1.
-  -	Then, he computes p = gk  and s = hk = gak.
+  -	Then, he computes p = g^k  and s = h^k = g^(ak(.
   -	Multiples s with M.
-  -	Then sends (p,M*s) = (gk,M*s).
-->	Arthur decrypts the message :
-  -	Arthur calculates s’ = pa = gak .
+  -	Then sends (p,M*s) = (g^k,M*s).
+  
+-	Arthur decrypts the message :
+  -	Arthur calculates s’ = p^a = g^(ak) .
   -	He divides M*s by s’ to obtain M as s = s’.
 
 ### An Example 
