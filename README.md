@@ -1,5 +1,39 @@
 # Network-Security-CSE-537
 
+
+## Practical Assignment 5
+
+### Implementation of El Gamal algorithm 
+
+## Solution Approach :
+
+El Gamal encryption is public-key cryptosystem which uses asymmetric key encryption for communicating between two parties and encrypting the message. 
+Let’s understand the idea using a simple example : 
+Suppose Tommy wants to communicate with Arthur,
+(1)	Arthur will generate his public and private keys : 
+-	He will choose a very large number q and a cyclic group Fq.
+-	From the group, he will choose two elements g and a such that GCD(q , a) = 1.
+-	 Computes h = ga.
+-	He then publishes F,h = ga, q and g as his public key and a as private key.
+(2)	Now Tommy encrypts the data using Arthur’s public key : 
+-	Tommy selects an element k from cyclic group F such that GCD(q,k) = 1.
+-	Then, he computes p = gk  and s = hk = gak.
+-	Multiples s with M.
+-	Then sends (p,M*s) = (gk,M*s).
+(3)	Arthur decrypts the message :
+-	Arthur calculates s’ = pa = gak .
+-	He divides M*s by s’ to obtain M as s = s’.
+
+### An Example 
+Original Message : How you doing ?
+g used :  3363096353293157562289557815414368823473456377149      
+h = g^a used :  2701504145817056170075118532332297466311764362629
+g^k used :  8234195178917799691733309775548171597753240706569    
+g^ak used :  10266653404741035243347135758407606546946688712689  
+Decrypted Message : How you doing ?
+
+
+
 ## Practical Assignment 2
 
 Perform experiments to explore the Avalanche Effect progression across the DES rounds. Use (i) 5 different plaintexts (ii) 5 different Hamming distances (HD) (iii) 5 different secret keys. Report plots of HD against round number. 
