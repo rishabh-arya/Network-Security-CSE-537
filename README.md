@@ -12,6 +12,7 @@ El Gamal encryption is public-key cryptosystem which uses asymmetric key encrypt
 Let’s understand the idea using a simple example : 
 
 Suppose Tommy wants to communicate with Arthur,
+
 (1)	Arthur will generate his public and private keys : 
   -	He will choose a very large number q and a cyclic group Fq.
   -	From the group, he will choose two elements g and a such that GCD(q , a) = 1.
