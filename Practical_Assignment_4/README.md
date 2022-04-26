@@ -25,3 +25,11 @@ where,
        randomNums[i] = ((randomNums[i – 1] * a) + c) % m 
 
 - Finally, return the random numbers.
+
+
+
+## PRNG - 2 : Mersenne Twister 
+
+The Mersenne Twister is a general-purpose pseudorandom number generator (PRNG) developed in 1997 by Makoto Matsumoto [ja] and Takuji Nishimura . Its name derives from the fact that its period length is chosen to be a Mersenne prime.
+The Mersenne Twister was designed specifically to rectify most of the flaws found in older PRNGs.
+The most commonly used version of the Mersenne Twister algorithm is based on the Mersenne prime 219937 – 1. The standard implementation of that, MT19937, uses a 32-bit word length. There is another implementation (with five variants) that uses a 64-bit word length, it generates a different sequence.
