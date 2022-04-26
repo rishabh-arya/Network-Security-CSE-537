@@ -4,10 +4,24 @@ This method is a class of Pseudo Random Number Generator (PRNG) algorithms used 
 
 X_new = (a*X_prev + c ) mod m
 
-where, X, is the sequence of pseudo-random numbers
-m, ( > 0) the modulus
-a, (0, m) the multiplier
-c, (0, m) the increment
-X0,  [0, m) – Initial value of sequence known as seed
+where, 
 
-m, a, c, and X0 should be chosen appropriately to get a period almost equal to m.  
+       X, is the sequence of pseudo-random numbers
+       m, ( > 0) the modulus
+       a, (0, m) the multiplier
+       c, (0, m) the increment
+       X0,  [0, m) – Initial value of sequence known as seed
+
+       m, a, c, and X0 should be chosen appropriately to get a period almost equal to m.  
+
+### Approach: 
+
+- Choose the seed value X0, Modulus parameter m, Multiplier term a, and increment term c.
+- Initialize the required amount of random numbers to generate (say, an integer variable noOfRandomNums).
+- Define a storage to keep the generated random numbers (here, vector is considered) of size noOfRandomNums.
+- Initialize the 0th index of the vector with the seed value.
+- For rest of the indexes follow the Linear Congruential Method to generate the random numbers.
+
+       randomNums[i] = ((randomNums[i – 1] * a) + c) % m 
+
+- Finally, return the random numbers.
